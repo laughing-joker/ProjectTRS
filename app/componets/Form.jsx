@@ -1,4 +1,3 @@
-import { ButtonAsChild } from './Button/page'
 import { Button1 } from './button1'
 export default function Form() {
   return (
