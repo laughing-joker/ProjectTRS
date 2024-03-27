@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { Button1 } from '../componets/button1'
+import { CheckboxDemo } from '../componets/Checkbox'
+
 
 export default function Login() {
   return (
@@ -29,18 +31,13 @@ export default function Login() {
             </div>
             <div className='mt-8 flex justify-between items-center'>
             <div>
-                <input 
-                type="checkbox" 
-                id='remember'
-                />
-                <label className='ml-2 font-medium text-base' for="remember">Remember me</label>
+                <CheckboxDemo Text={'Remember me'}/>
             </div>
             <button className='font-medium text-base text-blue-300'><Link href="/Forgot-password">Forgot password</Link></button>
             </div>
         </div>
-        <div className='mt-8 flex flex-col m-2'>
+        <div className='mt-8 flex flex-col mr-5 space-y-5'>
             <Button1 bgColor="bg-blue-300" buttonText="Login" linkHref=""/>
-
             <Button1 bgColor="bg-blue-300" buttonText="Sign up" linkHref="Registration"/>
         </div>
         </div>

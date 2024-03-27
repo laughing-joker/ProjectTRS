@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import { Button1 } from '../componets/button1'
 
-export default function SignUp() {
+export default function ForgotPassword() {
   return (
     <div className="flex flex-col items-center justify-center h-screen" style={{
       backgroundImage: `linear-gradient(-25deg, #3182CE, #EBF8FF, #90CDF4)`,
@@ -20,10 +21,10 @@ export default function SignUp() {
             />
           </div>
           <div className='mt-3 flex flex-col'>
-            <button className='active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all py-3 rounded-xl bg-blue-300 text-white text-lg font-bold'>Submit</button>
+          <Button1 bgColor="bg-blue-300" buttonText="Submit" linkHref=""/>  
         </div>
           <div className=' mt-7 text-center text-base text-blue-300'>
-            <span className='text-black'>Already have an account? </span>
+            <span className='text-black'>Already have an account?</span>
             <Link href="/login">
               Log in
             </Link>
