@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../componets/Navbar'
+import {TableDemo} from '../componets/Table'
 export default function page() {
   return (
     <div className='bg-gray-100 w-full h-screen'>
@@ -7,7 +8,7 @@ export default function page() {
       <Navbar/>  
     </div>
     <div className='Main-content'>
-    <div className='flex flex-col justify-between'>
+    <div className='flex '>
     <div className=' bg-white shadow-md rounded-md h-screen'
     style={{
       width: '600px',
@@ -21,13 +22,16 @@ export default function page() {
     <div className=' bg-white shadow-md rounded-md h-screen'
     style={{
       width: '600px',
-      height: '190px',
-      marginTop: '18px',
+      height: '300px',
+      marginTop: '28px',
       marginLeft: '20px',
       display: 'flex',
       borderRadius: '5px',
     }}><p className='text-center'>hello</p>
     </div>
+    </div>
+    <div className=''>
+      <TableDemo/>
     </div>
     </div>
     </div>
