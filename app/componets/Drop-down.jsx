@@ -32,17 +32,16 @@ import {
 } from "@/components/ui/dropdown-menu"
 import Link from 'next/link'
 
-export function DropdownMenuDemo({text}) {
+export function DropdownMenuDemo({text,texts}) {
   return (
     <DropdownMenu className="">
       <DropdownMenuTrigger asChild>
         <Button variant="outline">{text}</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
-        <DropdownMenuSeparator />
         <DropdownMenuItem>
           <LogOut className="mr-2 h-4 w-4" />
-          <Link href='./login'><span>Log out</span></Link>
+          <Link href='./login'><span>{texts}</span></Link>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

@@ -8,27 +8,30 @@ import { BiSolidBell } from "react-icons/bi";
 import { BiSolidUser } from "react-icons/bi";
 export default function Navbar() {
   return (
-    <header className='bg-dark-background sticky top-0 z-[20] mx-auto flex w-full items-center justify-between border-blue-300 p-8 '>
-      <nav>
-          <div className=''>
-            <div>
+    <header className='mx-auto flex items-center justify-between p-0 w-full h-10'>
+      <nav className='h-50 w-full'>
+          <div className='p-10'>
+            <div className='border-b-2 mt-10'>
+            <div className='flex justify-between'>
+              <div>
               <BiSolidGridAlt style={{
                 width : '25px', height: '25px', cursor:'pointer',
-              }}/>
+              }}
+              />
             </div>
-            <div className='flex align-center relative' style={{ 
-            }}>
-            <Link href="./Home"><BiSolidHome className='space-between' style={{
-                width : '25px', height: '25px', cursor:'pointer',
-              }} /></Link>
-            <BiSolidBell style={{
+            <div className='flex'>
+              <BiSolidHome style={{
                 width : '25px', height: '25px', cursor:'pointer',
               }}/>
-              <DropdownMenuDemo text={<BiSolidUser style={{
-                width : '25px', height: '25px', 
-              }}/>} className=""/>
+              <BiSolidBell style={{
+                width : '25px', height: '25px', cursor:'pointer',
+              }}/>
+              <BiSolidUser style={{
+                width : '25px', height: '25px', cursor: 'pointer'
+              }}/> 
             </div>
-
+            </div>
+            </div>
           </div>
         </nav>
     </header>
