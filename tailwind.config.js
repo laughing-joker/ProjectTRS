@@ -17,6 +17,12 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        customFont: ['"Custom Font"', "sans-serif"],
+        customFont: ['"Custom Font"', "Rubik"],
+        customFont: ['"Custom Font"', "Nunito"],
+        customFont: ['"Custom Font"', "Inconsolata"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
