@@ -20,9 +20,9 @@ export default function Navbar() {
               />
             </div>
             <div className='flex'>
-              <BiSolidHome style={{
+            <Link href="./Home"><BiSolidHome style={{
                 width : '25px', height: '25px', cursor:'pointer',
-              }}/>
+              }}/></Link>  
               <BiSolidBell style={{
                 width : '25px', height: '25px', cursor:'pointer',
               }}/>
